@@ -1,35 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>captcha</title>
+   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-   <div class="container" style="width: 300px; height: 200px; border: solid black 3px; box-shadow: 2px; margin: auto; padding-top:10px;">
-
-<h1 id="searchid" style="text-align: center; font-weight: lighter;">EqFtlz</h1><br>
-
-<input id="inputbox" type = "text" style="width: 150px; height: 20px; border: solid black 1px; margin-left: 20px;">
-<button id="verify" style="background-color: green; color: white; width: 50px; height: 20px; text-align: center;">verify</button>
+   <div class="container">
+      <h1 id="searchid">EqFtlz</h1><br>
+      <input id="inputbox" type="text">
+      <button id="verify">verify</button>
    </div>
 
-   <script>
-    var searchid = document.getElementById("searchid")
-     
-    
-     var verify = document.getElementById("verify")
-    
-     verify.addEventListener("click", function(){
-        var enteredvalue  = document.getElementById("inputbox").value
-         if(enteredvalue == searchid.textContent){
-           alert("CAPTCHA verifed successfully")
-         }
-         else{
-           alert("CAPTCHA verification failed. Please try again")
-         }
-     })
-   </script>
+   <script src="index.js"></script>
+
 </body>
 
 </html>
